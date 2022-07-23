@@ -21,8 +21,10 @@ public class ModBlocks {
             = DeferredRegister.create(ForgeRegistries.BLOCKS, DegradeMod.MOD_ID);
 
     public static final RegistryObject<Block> BOLETE =
-            registerBlock("bolete", () -> new Block(AbstractBlock.Properties.create(Material.CARPET).variableOpacity()));
+            registerBlock("bolete", () -> new Block(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
+    public static final RegistryObject<Block> blue_oyster_mushroom =
+            registerBlock("blue_oyster_mushroom", () -> new Block(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
