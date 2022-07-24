@@ -5,6 +5,7 @@ import com.powers.degrademod.item.ModItemGroup;
 import com.powers.degrademod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -24,7 +25,7 @@ public class ModBlocks {
             registerBlock("bolete", () -> new Block(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
     public static final RegistryObject<Block> blue_oyster_mushroom =
-            registerBlock("blue_oyster_mushroom", () -> new Block(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
+            registerBlock("blue_oyster_mushroom", () -> new BlueOysterMushroom(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
