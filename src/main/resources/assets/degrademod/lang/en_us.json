@@ -1,6 +1,12 @@
 {
   "item.degrademod.oyster_mushroom": "Oyster Mushroom",
-  "block.degrademod.bolete": "Bolete",
+  "item.degrademod.mushroom_mush": "Mushroom Mush",
+  "item.degrademod.mushroom_mush_boots": "Mushroom Mush Boots",
+  "item.degrademod.mushroom_mush_leggings": "Mushroom Mush Leggings",
+  "item.degrademod.mushroom_mush_chestplate": "Mushroom Mush Chestplate",
+  "item.degrademod.mushroom_mush_helmet": "Mushroom Mush Helmet",
+  "block.degrademod.bolete": "Bolete Mushroom",
+  "block.degrademod.morel_mushroom" : "Morel Mushroom",
   "block.degrademod.blue_oyster_mushroom": "Blue Oyster Mushroom",
   "itemGroup.degradeModTab": "Degrade Mod"
 }
