@@ -24,8 +24,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> BOLETE =
             registerBlock("bolete", () -> new Block(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
-    public static final RegistryObject<Block> blue_oyster_mushroom =
+    public static final RegistryObject<Block> BLUE_OYSTER_MUSHROOM =
             registerBlock("blue_oyster_mushroom", () -> new BlueOysterMushroom(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
+
+    public static final RegistryObject<Block> MOREL_MUSHROOM =
+            registerBlock("morel_mushroom", () -> new MorelMushroom(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
