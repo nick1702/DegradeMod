@@ -30,6 +30,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOREL_MUSHROOM =
             registerBlock("morel_mushroom", () -> new MorelMushroom(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
 
+    public static final RegistryObject<Block> SHITAKE_MUSHROOM =
+            registerBlock("shitake_mushroom", () -> new ShitakeMushroom(AbstractBlock.Properties.create(Material.CARPET).notSolid()));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
