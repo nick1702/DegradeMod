@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 @Mod(DegradeMod.MOD_ID)
 public class DegradeMod
 {
-
+//this is dumb
     public static final String MOD_ID = "degrademod";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
