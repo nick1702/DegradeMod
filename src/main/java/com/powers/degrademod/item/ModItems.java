@@ -15,9 +15,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, DegradeMod.MOD_ID);
 
-    public static final RegistryObject<Item> OYSTER_MUSHROOM =
-            ITEMS.register("oyster_mushroom", () -> new Item(new Item.Properties().group(ModItemGroup.DEGRADE_GROUP)));
-
     public static final RegistryObject<Item> MUSHROOM_MUSH =
             ITEMS.register("mushroom_mush", () -> new Item(new Item.Properties().group(ModItemGroup.DEGRADE_GROUP)));
 
